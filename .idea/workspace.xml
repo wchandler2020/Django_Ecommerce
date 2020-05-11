@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb01abd-bdc2-4781-ab6f-08da185e0485" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/context_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/migrations/0003_auto_20200511_1103.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ecommerce_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/views.py" afterDir="false" />
