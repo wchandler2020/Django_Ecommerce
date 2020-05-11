@@ -2,41 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb01abd-bdc2-4781-ab6f-08da185e0485" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/media/category/reebok.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/media/product/reebok_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/migrations/0002_auto_20200510_2204.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/bgImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/details1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/context_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/migrations/0003_auto_20200511_1103.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecommerce_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
