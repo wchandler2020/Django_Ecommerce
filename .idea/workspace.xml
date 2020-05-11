@@ -1,10 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="beb01abd-bdc2-4781-ab6f-08da185e0485" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ecommerce_app/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/media/category/reebok.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/media/product/reebok_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/migrations/0002_auto_20200510_2204.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/bgImage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/details1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/static/images/testImage6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Django_Ecommerce" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bjBMqcoAR2E88sPSuOn4zIad6V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/static/images" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vasty\OneDrive\Desktop\python\DjangoEcommerce\src\store\static\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vasty\OneDrive\Desktop\python\DjangoEcommerce\src\store\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="beb01abd-bdc2-4781-ab6f-08da185e0485" name="Default Changelist" comment="" />
+      <created>1589135577979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589135577979</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

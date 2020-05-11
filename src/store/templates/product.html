@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Product
+{% endblock %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row mt-5">
+            <div class="col-10 mx-auto col-md-6 my-3">
+                <img src="{% static 'images/details1.jpg' %}" style="width:500px;height:500px;" />
+            </div>
+            <div class="col-10 mx-auto col-md-6 my-3">
+                <div>
+                    <h1 class="product_title">Nike Shoes</h1>
+                    <h5 class="text-info font-italic mb-3">
+                            <span class="mr-1">$</span>100
+                        </h5>
+                    <p class="product_dsscription">Product Description</p>
+                    <p class="text-justify product_text">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Ab accusantium alias aliquam, amet animi at blanditiis
+                        corporis cupiditate delectus dolorem, illo impedit in ipsa iusto laborum
+                        magnam minus non officia pariatur quam quo reprehenderit rerum tempora
+                        ullam ut veniam voluptate!</p>
+                    <p class="text-justify product-text"><strong>Out of Stock</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
