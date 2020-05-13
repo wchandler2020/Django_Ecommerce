@@ -1,7 +1,10 @@
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
 from .models import *
+import stripe
+from django.conf import settings
+from django.contrib.auth.models import User, Group
+from .forms import SignUpForm
 
 
 def home(request, category_slug=None):
@@ -62,8 +65,74 @@ def cart_detail(request, total=0, counter=0, cart_items = None):
             counter += cart_item.quantity
     except ObjectDoesNotExist:
         pass
+    stripe.api_key = settings.STRIPE_SECRET_KEY
+    stripe_total = int(total * 100)
+    description = 'Z-Store - New Order'
+    data_key = settings.STRIPE_PUBLISHABLE_KEY
+    if request.method == 'POST':
+        try:
+            token = request.POST['stripeToken']
+            email = request.POST['stripeEmail']
+            billingName = request.POST['stripeBillingName']
+            billingAddress1 = request.POST['stripeBillingAddressLine1']
+            billingCity = request.POST['stripeBillingAddressCity']
+            billingZipCode = request.POST['stripeBillingAddressZip']
+            billingCountry = request.POST['stripeBillingAddressCountryCode']
+            shippingName = request.POST['stripeShippingName']
+            shippingAddress1 = request.POST['stripeShippingAddressLine1']
+            shippingCity = request.POST['stripeShippingAddressCity']
+            shippingPostcode = request.POST['stripeShippingAddressZip']
+            shippingCountry = request.POST['stripeShippingAddressCountryCode']
+            customer = stripe.Customer.create(
+                email=email,
+                source = token
+            )
+            charge = stripe.Charge.create(
+                amount=stripe_total,
+                currency='usd',
+                description=description,
+                customer=customer.id
+            )
+            try:
+                order_details = Order.objects.create(
+                    token = token,
+                    total = total,
+                    emailAddress = email,
+                    billingName = billingName,
+                    billingAddress1 = billingAddress1,
+                    billingCity = billingCity,
+                    billingZipCode = billingZipCode,
+                    billingCountry = billingCountry,
+                    shippingName = shippingName,
+                    shippingAddress1 = shippingAddress1,
+                    shippingCity = shippingCity,
+                    shippingPostcode = shippingPostcode,
+                    shippingCountry = shippingCountry
+                )
+                order_details.save()
+                for order_item in cart_items:
+                    or_item = OrderItem.objects.create(
+                        product = order_item.product.name,
+                        quantity = order_item.quantity,
+                        price = order_item.product.price,
+                        order = order_details
+                    )
+                    or_item.save()
 
-    return  render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter = counter))
+                    products = Product.objects.get(id=order_item.product.id)
+                    products.stock = int(order_item.product.stock - order_item.quantity)
+                    products.save()
+                    order_item.delete()
+
+                    print("the order has been created")
+                return redirect("thank_you", order_details.id)
+            except ObjectDoesNotExist:
+                pass
+
+        except stripe.error.CardError as e:
+            return False, e
+
+    return render(request, 'cart.html', dict(cart_items=cart_items, total=total, counter = counter, data_key=data_key, stripe_total=stripe_total, description=description ))
 
 def cart_remove(request, product_id):
     cart = Cart.objects.get(cart_id =_cart_id(request))
@@ -82,6 +151,12 @@ def cart_remove_product(request, product_id):
     cart_item = CartItem.objects.get(product=product, cart=cart)
     cart_item.delete()
     return redirect('cart_detail')
+
+def thankYOu_page(request, order_id):
+    if order_id:
+        customer_order = get_object_or_404(Order, id=order_id)
+    return render(request, 'thank_you.html', {'customer_order': customer_order})
+
 
 
 

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store'
+    'store',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+STRIPE_PUBLISHABLE_KEY = 'pk_test_6KUCNOLB3Ei5o2R2Ohp8PydT'
+STRIPE_SECRET_KEY = 'sk_test_cMxFaJbA4pyiEmqK1mTBdvQU'
