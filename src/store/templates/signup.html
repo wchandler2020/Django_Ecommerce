@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Register User
+{% endblock %}
+
+{% block content %}
+    <div>
+        {% if not form.is_valid %}
+            <div class="mx-auto">
+                <br>
+                <h1 class="product_title text-center">Create A New Account</h1>
+                <br>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-5 mx-auto bg-light">
+                    <br>
+                    <p>Please Enter The Following Information</p>
+                    <form method="POST" class="mb-5">
+                        {% csrf_token %}
+                        {{ form | crispy}}
+                        <button type="submit" name="button" class="btn btn-success">Register</button>
+                    </form>
+                    <br>
+
+                </div>
+            </div>
+        {% else %}
+        <div class="mx-auto">
+            <br>
+            <h1 class="product_title text-center">
+                Congratulations, You Have Been Successfully Register.
+            </h1>
+            <br>
+            <div class="container">
+                <p>Dear Valued Customer,
+                <br>
+                <br>
+                Your New Account Has Been Created.
+                <a href="{% url 'home' %}">Continue Shopping.</a>Enjoy our wide variety of products.
+                </p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}

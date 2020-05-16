@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+User Sign In
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <br>
+        <h1 class="product_title text-center">
+            Login Or Create A New Account
+        </h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6 text-center custom_div">
+                <br>
+                <h2 class="product_title">New Customers</h2>
+                <br>
+                <p>Once your account has been created, you will be able to review your oder history.</p>
+                <br>
+                <a href="{% url 'signup' %}" class="btn btn-secondary">Register User</a>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6 text-center bg-light">
+                <br>
+                <h2 class="product_tile">Registered Customers Only</h2>
+                <form method="POST">
+                    {% csrf_token %}
+                    <p>{{form | crispy }}</p>
+                    <button type="submit" name="button" class="btn btn-secondary">Sign In</button>
+                </form>
+                <br>
+            </div>
+        </div>
+        <br>
+    </div>
+{% endblock %}

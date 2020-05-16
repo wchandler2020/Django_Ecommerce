@@ -19,3 +19,17 @@ body{
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+
+.errorlist{
+    color: red;
+    font-weight: bold;
+}
+
+.bg-light{
+    background: #f1f1f2 !important;
+}
+
+custom_div{
+    margin-bottom: 20px !important;
+
+}

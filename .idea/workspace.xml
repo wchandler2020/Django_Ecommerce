@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb01abd-bdc2-4781-ab6f-08da185e0485" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/migrations/0005_order_orderitem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/templates/thank_you.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/media/category/nike11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/media/product/nike22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/migrations/0006_review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/order_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/orders_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ecommerce_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/static/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/static/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/templates/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/views.py" afterDir="false" />
     </list>

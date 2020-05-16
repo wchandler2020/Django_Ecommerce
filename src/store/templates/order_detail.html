@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Order Details
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="text-center">
+        <br>
+        <h1 class="text-center product_title">Order Details</h1>
+        <br>
+        <table class="table table-bordered">
+            <tr>
+                <td class="text-left" colspan="2">
+                    <strong>Order: </strong>#{{order.id}} <br>
+                    <strong>Date: </strong>{{order.created|date:'d M Y'}}<br>
+                    <strong>Order Total: </strong>{{order.total}}<br>
+                    <strong>Order Status: </strong><i class="fas fa-check"></i>&nbsp;Complete
+                </td>
+                <td class="text-left" colspan="2">
+                    <strong>Billing Address: </strong><br>
+                    {{order.billingName}}<br>
+                    {{order.billingAddress1}}<br>
+                    {{order.billingCity}}<br>
+                    {{order.billingZipCode}}<br>
+                    {{order.billingCountry}}<br>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Product Description</strong></td>
+                <td><strong>Quantity</strong></td>
+                <td><strong>Unit Price</strong></td>
+                <td><strong>Sub Total</strong></td>
+            </tr>
+            {% for item in order_items %}
+            <tr>
+                <td>{{ item.product }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>${{ item.price }}</td>
+                <td>${{ item.sub_total }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td class="text-right" colspan="3">Total: </td>
+                <td>{{order.total}}</td>
+            </tr>
+            <tr>
+                <td class="text-right" colspan="3">Amount Paid</td>
+                <td>{{order.total}}</td>
+            </tr>
+            <tr>
+                <td class="text-left"><strong>Shipping Address: </strong><br>
+                {{order.shippingName}}<br>
+                {{order.shippingAddress1}}<br>
+                {{order.shippingCity}}<br>
+                {{order.shippingPostcode}}<br>
+                {{order.shippingCountry}}<br>
+                </td>
+            </tr>
+            <td class="text-left" colspan="2">
+                <strong>Payment Details: </strong>
+                The Order #{{order.id}} Has Been Paid Successfully.
+            </td>
+        </table>
+        <button class="btn btn-secondary mb-5" onclick="window.print();"><i class="fas fa-print"></i>&nbsp; Print Your Order</button>
+        <br>
+        <br>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}
